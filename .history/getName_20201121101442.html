@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var WshShell =new ActiveXObject("WScript.Shell");
+        document.write("计算机名 = "+ WshShell.ExpandEnvironmentStrings("%COMPUTERNAME%")+"<br/>");
+        document.write("登录用户名 = "+ WshShell.ExpandEnvironmentStrings("%USERNAME%")+"<br/>");
+    </script>
+</body>
+</html>
